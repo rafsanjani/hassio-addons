@@ -1,11 +1,13 @@
-name: go2rtc 1.9.6
-description: go2rtc pinned to version 1.9.6
+# https://github.com/AlexxIT/builder/blob/master/builder.sh
+name: go2rtc master
+description: The latest unstable version
 url: https://github.com/AlexxIT/go2rtc
-image: ghcr.io/alexxit/go2rtc:1.9.6
-arch: [amd64, aarch64, i386, armv7]
+image: alexxit/go2rtc
+arch: [ amd64, aarch64, i386, armv7 ]
 
-version: 1.9.6
-slug: go2rtc-1-9-6
+# https://developers.home-assistant.io/docs/add-ons/configuration
+version: master
+slug: go2rtc-master
 init: false
 startup: system
 host_network: true
@@ -15,4 +17,4 @@ audio: true
 ingress: true
 ingress_port: 1984
 panel_icon: mdi:camera-wireless
-map: ["config:rw", "media", "ssl"]
+map: [ "config:rw", "media", "ssl" ]
